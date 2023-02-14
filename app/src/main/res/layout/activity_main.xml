@@ -25,13 +25,16 @@
     <ScrollView
         android:id="@+id/bio_scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/layout_padding"
+        android:paddingEnd="@dimen/layout_padding">
 
         <TextView
             android:id="@+id/bio_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            style="@style/NameStyle"/>
+            android:text="@string/bio"
+            style="@style/NameStyle"
+            android:lineSpacingMultiplier="1.2"/>
     </ScrollView>
 </LinearLayout>
