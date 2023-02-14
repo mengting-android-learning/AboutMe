@@ -29,12 +29,20 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/done_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="@dimen/layout_margin"
         android:text="@string/done" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/NameStyle"
+        android:visibility="gone"/>
 
     <ScrollView
         android:id="@+id/bio_scroll"
