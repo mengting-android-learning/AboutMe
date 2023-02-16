@@ -1,35 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/edit"
+        android:id="@+id/edit_extra1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Edit something here" />
+        android:hint="Extra field 1" />
 
-    <Button
-        android:id="@+id/more"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:text="More" />
-
-    <ViewStub
-        android:id="@+id/view_stub"
-        android:layout="@layout/profile_extra"
+    <EditText
+        android:id="@+id/edit_extra2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Extra field 2" />
 
-    <include layout="@layout/ok_cancel_layout"/>
+    <EditText
+        android:id="@+id/edit_extra3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Extra field 3" />
+
 </LinearLayout>
