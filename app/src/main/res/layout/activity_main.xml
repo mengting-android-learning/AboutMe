@@ -1,18 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <GridLayout
+        android:id="@+id/gridLayout1"
         android:layout_width="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="6"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerInParent="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:background="#8800CCCC"
+            android:text="0"
+            android:textSize="50sp" />
+
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="回退" />
+
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="清空" />
+
+        <Button android:text="+" />
+
+        <Button android:text="1" />
+
+        <Button android:text="2" />
+
+        <Button android:text="3" />
+
+        <Button android:text="-" />
+
+        <Button android:text="4" />
+
+        <Button android:text="5" />
+
+        <Button android:text="6" />
+
+        <Button android:text="*" />
+
+        <Button android:text="7" />
+
+        <Button android:text="8" />
+
+        <Button android:text="9" />
+
+        <Button android:text="/" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="." />
+
+        <Button android:text="0" />
+
+        <Button android:text="=" />
+
+    </GridLayout>
+
+    <include
+        android:layout_height="wrap_content"
+        layout="@layout/title_image"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/gridLayout1"
+        android:layout_alignLeft="@+id/gridLayout1" />
+</RelativeLayout>
