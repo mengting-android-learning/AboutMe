@@ -8,15 +8,16 @@ import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var stub:ViewStub
+    private lateinit var stub: ViewStub
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        findViewById<Button>(R.id.more).setOnClickListener { onMoreClick() }
+        findViewById<Button>(R.id.more).setOnClickListener { onMoreClick(it) }
     }
 
-    private fun onMoreClick(){
+    private fun onMoreClick(view: View) {
         stub = findViewById(R.id.view_stub)
-        val inflated:View = stub.inflate()
+        val inflated: View = stub.inflate()
+        view.visibility = View.GONE
     }
 }
